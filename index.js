@@ -16,7 +16,7 @@ app.use(morgan('dev'));
 app.use(cors());
 app.use(express.static(path.join(__dirname, 'public')));
 
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 5000;
 
 app.use('/api', routes.main);
 app.use('/api/accounts', routes.account);
